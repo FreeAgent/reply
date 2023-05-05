@@ -20,7 +20,7 @@ class DetailsPage extends StatefulWidget {
     final RenderBox box = context.findRenderObject();
     final Rect sourceRect = box.localToGlobal(Offset.zero) & box.size;
 
-    Provider.of<EmailModel>(context).currentlySelectedEmailId = id;
+    Provider.of<EmailModel>(context, listen: false).currentlySelectedEmailId = id;
 
     return PageRouteBuilder<void>(
       pageBuilder: (BuildContext context, _, __) => DetailsPage(
@@ -89,7 +89,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   icon: const Icon(Icons.keyboard_arrow_down),
                   padding: const EdgeInsets.only(left: 24, top: 0, right: 12),
                   onPressed: () {
-                    Provider.of<EmailModel>(context).currentlySelectedEmailId = -1;
+                    Provider.of<EmailModel>(context, listen: false).currentlySelectedEmailId = -1;
                     Navigator.of(context).pop();
                   },
                 )

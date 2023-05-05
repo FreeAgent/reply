@@ -2,6 +2,13 @@
 
 [![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/Solido/awesome-flutter)
 
+The purpose of this fork is to upgrade dependencies, as follows:
+* Flutter 3.3.0
+* Gradle 7.4.2
+* CocoaPods 1.12.1
+
+The upgraded project has been built & tested on simulated devices running iOS 16 (iPhone 14 Pro Max) & Android R (Pixel 5).
+
 > Reply is an email app that uses Material Design components and Material Theming to create an on-brand communication experience.
 
 This project tries to deliver a pixel-perfect implementation of the [Reply Material Design Case Study](https://material.io/design/material-studies/reply.html) in [Flutter](https://github.com/flutter/flutter). 
